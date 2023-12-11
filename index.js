@@ -14,14 +14,14 @@ const initializerDbAndServer = async () => {
       filename: dbpath,
       driver: sqlite3.Database,
     });
-    app.listen(3000, () => {
-      console.log("server is running");
-    });
   } catch (e) {
     console.log(e.message);
     process.exit(1);
   }
 };
+app.listen(3000, () => {
+  console.log("server is running");
+});
 
 initializerDbAndServer();
 
