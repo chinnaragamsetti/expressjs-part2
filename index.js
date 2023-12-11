@@ -4,7 +4,7 @@ const { open } = require("sqlite");
 const sqlite3 = require("sqlite3");
 const path = require("path");
 
-const dbpath = path.join(__dirname, goodreads.db);
+const dbpath = path.join(__dirname, "goodreads.db");
 
 let db = null;
 
